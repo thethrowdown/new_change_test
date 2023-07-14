@@ -4,5 +4,5 @@ on: workflow_dispatch
 
 jobs:
   cd:
-    uses: thethrowdown/new_change_test2/.github/workflows/managed-cd.yaml
+    uses: thethrowdown/new_change_test2/.github/workflows/managed-cd.yaml@main
     secrets: inherit
