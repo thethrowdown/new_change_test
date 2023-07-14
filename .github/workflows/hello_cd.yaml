@@ -1,4 +1,4 @@
-# name: Hello_cd2
+# name: Hello_cd
 
 on: workflow_dispatch 
 
