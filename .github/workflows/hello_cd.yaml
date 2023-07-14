@@ -1,0 +1,10 @@
+# name: Hello_cd
+
+on: 
+workflow_dispatch 
+
+jobs:
+  cd:
+    uses: SleepNumberInc/managed-api-cd-gha-workflow/.github/workflows/managed-api-cd.yaml@snow-cr-creation
+    uses: thethrowdown/new_change_test2/.github/workflows/managed-cd.yaml
+    secrets: inherit
