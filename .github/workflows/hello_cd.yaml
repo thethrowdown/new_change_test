@@ -14,7 +14,7 @@ jobs:
     #environment: prod             #Optional - tells github which environment this job runs on. 
     steps:
       - name: ServiceNow Change
-        uses: ServiceNow/servicenow-devops-change@v1.34.2
+        uses: thethrowdown/new_change_test2/.github/workflows/managed-cd.yaml@main
         with:
           devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
           devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}
@@ -26,9 +26,5 @@ jobs:
           interval: '100' #Set start and end dates for planned time 8:54 EST - "start_date":"2023-04-25 12:54:00","end_date":"2023-04-25 12:58:00"
           timeout: '100'   
           
- deploy2:
-    name: Deploy
-    uses: thethrowdown/new_change_test2/.github/workflows/managed-cd.yaml@main
-    secrets: inherit
- 
+
  
