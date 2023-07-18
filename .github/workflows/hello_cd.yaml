@@ -3,9 +3,9 @@
 on: workflow_dispatch 
 
 jobs:
-# cd:
-#  uses: thethrowdown/new_change_test2/.github/workflows/managed-cd.yaml@main
-#  secrets: inherit
+ cd:
+   uses: thethrowdown/new_change_test2/.github/workflows/managed-cd.yaml@main
+   secrets: inherit
  
  deploy:
     name: Deploy
@@ -14,7 +14,7 @@ jobs:
     #environment: prod             #Optional - tells github which environment this job runs on. 
     steps:
       - name: ServiceNow Change
-        uses: thethrowdown/new_change_test2/.github/workflows/managed-cd.yaml@main
+        uses: ServiceNow/servicenow-devops-change@v1.34.2
         with:
           devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
           devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}
