@@ -3,8 +3,7 @@
 on: workflow_dispatch 
 
 jobs:
-  deploy:
-    name: Deploy
+  cd:
     uses: thethrowdown/new_change_test2/.github/workflows/managed-cd.yaml@main
     secrets: inherit
-    job-name: 'Deploy'
+
