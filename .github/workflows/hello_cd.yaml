@@ -7,3 +7,12 @@ jobs:
   uses: thethrowdown/new_change_test2/.github/workflows/managed-cd.yaml@main
   secrets: inherit
  
+ deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    #environment: prod             #Optional - tells github which environment this job runs on. 
+    steps:
+      - name: ServiceNow Change
+        with:
+         job-name: 'Deploy'
+        
