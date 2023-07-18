@@ -7,7 +7,7 @@ jobs:
 #  uses: thethrowdown/new_change_test2/.github/workflows/managed-cd.yaml@main
 #  secrets: inherit
  
-deploy:
+ deploy:
     name: Deploy
     continue-on-error: true
     runs-on: ubuntu-latest
