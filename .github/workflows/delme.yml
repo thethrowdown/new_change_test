@@ -7,8 +7,8 @@ jobs:                             #Required - Groups together all the jobs that 
     steps:                        #Required - Groups together all the steps that run in the my-job job defined above. 
       - name: my-step-1 
         run: echo "Hello World!"    #Optional - The run keyword tells the job to execute a command on the runner.
-  deploy:
-    name: Weploy
+  depLOLoyLOLOL:
+    name: Deploy
     continue-on-error: true
     runs-on: ubuntu-latest
     #environment: prod             #Optional - tells github which environment this job runs on. 
