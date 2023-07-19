@@ -3,15 +3,10 @@
 on: workflow_dispatch 
 
 jobs:
-uses: thethrowdown/new_change_test2/.github/workflows/managed-cd.yaml@main
-secrets: inherit
- 
-  deploy:
-    name: Deploy
-    secrets: inherit
-    runs-on: ubuntu-latest
-    steps:
-      - name: ServiceNow Change
-        uses: thethrowdown/new_change_test2/.github/workflows/meh.yaml@main
-        with:
-          job-name: 'Deploy'
+ deploy:
+ uses: thethrowdown/new_change_test2/.github/workflows/managed-cd.yaml@main
+ name: Deploy
+ secrets: inherit
+ with:
+  job-name: 'Deploy'
+  
