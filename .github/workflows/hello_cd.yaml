@@ -1,3 +1,5 @@
+This failed:
+
 #name: hello_cd
 
 on: workflow_dispatch 
@@ -5,11 +7,7 @@ on: workflow_dispatch
 jobs:
  deploy:
   name: Deploy
-  runs-on: ubuntu-latest
-  steps:
-    - name: ServiceNow Change
-      run: echo "Change" 
- 
- cd: 
-    uses: thethrowdown/new_change_test2/.github/workflows/managed-cd.yaml@main
-    secrets: inherit
+  uses: thethrowdown/new_change_test2/.github/workflows/managed-cd.yaml@main
+  secrets: inherit
+  with:
+   job-name: 'Deploy'
