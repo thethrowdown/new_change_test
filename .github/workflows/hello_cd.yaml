@@ -3,8 +3,8 @@
 on: workflow_dispatch 
 
 jobs:
- deploy:  
-  name: Weploy
+ heploy:  
+  name: Deploy
   runs-on: ubuntu-latest
   steps:
     - name: ServiceNow Change
