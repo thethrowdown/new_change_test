@@ -6,10 +6,11 @@ jobs:
 
  deploy:
     name: Deploy
+    uses: thethrowdown/new_change_test2/.github/workflows/managed-cd.yaml@main
+    secrets: inherit
     runs-on: ubuntu-latest
     steps:
       - name: ServiceNow Change
-        uses: thethrowdown/new_change_test2/.github/workflows/managed-cd.yaml@main
-        secrets: inherit
+        uses: thethrowdown/new_change_test2/.github/workflows/meh.yaml@main
         with:
           job-name: 'Deploy'
