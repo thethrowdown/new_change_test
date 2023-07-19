@@ -4,9 +4,9 @@ on: workflow_dispatch
 
 jobs:
  deploy:
+  name: Deploy
   uses: thethrowdown/new_change_test2/.github/workflows/managed-cd.yaml@main
   secrets: inherit
- #name: Deploy
-# with:
+ # with:
  # job-name: 'Deploy'
   
